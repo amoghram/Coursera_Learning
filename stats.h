@@ -32,9 +32,10 @@
  * listed statistics information to terminal
  *
  * @param arr unsigned char pointer to an n- element data array
+ * @param len unsigned int Integer the length of arr
  * @return no return "Print stats to Termianl"
  */
-void print_statistics(unsigned char* arr);
+void print_statistics(unsigned char* arr, unsigned int len);
 
 /**
  * @brief Print the input array to terminal.
@@ -60,7 +61,7 @@ void print_array(unsigned char* arr, unsigned int len);
  * 
  * @return median value "unsigned char"
  */
-void find_median(unsigned char* arr, unsigned int len);
+unsigned char find_median(unsigned char* arr, unsigned int len);
 
 /**
  * @brief Return mean of an array.
@@ -68,12 +69,12 @@ void find_median(unsigned char* arr, unsigned int len);
  * This function takes 2 inputs an unsigned char array and unsigned integer length of an array, 
  * it returns the mean as unsigned char. 
  *
- * @param arr unsigned char pointer to an n- element data array
+ * @param arr unsigned char pointer to an n- element data array. The array is assumed to be sorted
  * @param len unsigned int Integer the length of arr
  * 
  * @return mean value "unsigned char"
  */
-void find_mean(unsigned char* arr, unsigned int len);
+unsigned char find_mean(unsigned char* arr, unsigned int len);
 
 /**
  * @brief Return maximum value element of an array.
@@ -86,7 +87,7 @@ void find_mean(unsigned char* arr, unsigned int len);
  * 
  * @return maximum value element "unsigned char"
  */
-void find_maximum(unsigned char* arr, unsigned int len);
+unsigned char find_maximum(unsigned char* arr, unsigned int len);
 
 /**
  * @brief Return minimum value element of an array.
@@ -99,7 +100,7 @@ void find_maximum(unsigned char* arr, unsigned int len);
  * 
  * @return minimum value element "unsigned char"
  */
-void find_minimum(unsigned char* arr, unsigned int len);
+unsigned char find_minimum(unsigned char* arr, unsigned int len);
 
 /**
  * @brief sort elements of an array from largest to smallest.
